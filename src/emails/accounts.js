@@ -1,7 +1,4 @@
 const sgMail = require('@sendgrid/mail');
-const e = require('express');
-const { getMaxListeners } = require('../models/user');
-
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 

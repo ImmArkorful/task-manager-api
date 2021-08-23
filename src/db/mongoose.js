@@ -1,12 +1,11 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGODB_URL,{
-    useNewUrlParser : true,
-    useCreateIndex : true,
-    useUnifiedTopology : true,
-    useFindAndModify:false
-})
-
+mongoose.connect(process.env.MONGODB_URL, {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+});
 
 /* const me = new User({
         name : '   Jessica   ',
@@ -21,9 +20,6 @@ me.save().then((me)=>{
     console.log('Error!: ',error);
     
 }) */
-
-
-
 
 /* taskOne.save().then((task)=>{
     console.log(task);
